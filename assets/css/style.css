@@ -1,0 +1,160 @@
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+p,
+button,
+.secondary-form h2,
+.secondary-form form{
+    margin-left: 40px;
+}
+.container{
+    display: flex;
+}
+.primary-logo{
+    width: 35%;
+    background-image: url(../img/diana-serbichenko-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.logo-div img{
+    margin-right: 20px;
+}
+.logo-div{
+    background: rgb(0, 0, 0, 0.7);
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    color: white;
+}
+.credits{
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    color: white;
+    display: flex;
+}
+.credits a{
+    color: white;
+    margin: 0 5px;
+}
+
+.secondary-page{
+    background: white;
+    width: 65%;
+    padding: 4.5% 0 5%;
+}
+.primary-paragraph{
+    font-size: 1.1em;
+    font-weight: bold;
+    width: 70%;
+}
+.primary-paragraph p:last-of-type{
+    margin-top: 20px;
+}
+.secondary-form{
+    background: white;
+    padding: 25px 0;
+    height: 280px;
+    margin: 30px 0;
+    box-shadow: 10px 5px 8px rgb(0, 0, 0, 0.3);
+}
+form{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.secondary-heading{
+    font-size: 1.325em;
+    margin-bottom: 10px;
+}
+form label{
+    font-size: .725em;
+    font-weight: bold;
+    margin-bottom: 3px;
+}
+form input{
+    border: 1px solid #E5E7EB;
+    width: 250px;
+    padding: 5px;
+    font-size: .755em;
+    border-radius: 3px;
+}
+form input:focus{
+    outline: 1px solid blue;
+    border: none;
+    box-shadow: 2px 1px 8px rgb(0, 0, 0, 0.2);
+}
+.flex-column{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 60px 10px 0;
+}
+form input.password{
+    padding: 5px;
+    font-size: .755em;
+    outline: 1px solid red;
+}
+input.password:focus{
+    outline: 1px solid blue;
+    border: none;
+}
+.error{
+    margin-top: 5px;
+    color: red;
+    font-size: 0.725em;
+}
+.create-account{
+    padding: 15px 35px;
+    border: 0;
+    background: #596D48;
+    color: #E5E7EB;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.login-text{
+    margin-top: 15px;
+    font-size: 1em;
+}
+.login-text span{
+    color: #29351f;
+    font-weight: bold;
+}
+.credits-2{
+    display: none;
+    margin-top: 50px;
+}
+.credits-2 a{
+    margin: 0 5px;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    .container{
+        flex-direction: column;
+    }
+    .primary-logo{
+        width: 100%;
+    }
+    .credits{
+        display: none;
+    }
+    .logo-div{
+        margin-bottom: 20px;
+    }
+    .secondary-page{
+        width: 100%;
+    }
+    .secondary-form{
+        height: 500px;
+    }
+    .credits-2{
+        display: flex;
+        justify-content: center;
+        color: black;
+    }
+}
